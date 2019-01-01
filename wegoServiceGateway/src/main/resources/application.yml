@@ -1,0 +1,42 @@
+# This is wego API filter and Eureka server 
+ 
+spring:
+  application:
+    name: wegoServer
+    
+ #  Following configuretion is for Eureka server registry
+ 
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    
+# Active port for the server 
+
+server:
+  port: 1111
+  
+  
+      
+      
+      
+#  zuul:
+#  routes:
+#    bar:
+#      serviceId: foo
+#      path: /foo
+#      stripPrefix: true
+#    portchange:
+#      path: /hello
+#      stripPrefix: true
+#      url: http://localhost:80
+#
+#foo:
+#  ribbon:
+#    listOfServers: localhost:9080
+#
+#bar:
+#  ribbon:
+#    listOfServers: localhost:7080
