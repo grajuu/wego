@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: wego-people
+    
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry:   true
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+   #  1. Define URL of registration server (defaultZone)   
+      
+ # HTTP server port 
+server:
+  port: 1115
